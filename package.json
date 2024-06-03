@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "pnpm exec nx run-many -t build"
+    "build": "pnpm exec nx run-many -t build",
+    "format": "prettier  \"{apps,libs}/**/*.{ts,tsx,js,json}\" --ignore-path .gitignore",
+    "format:check": "pnpm format --check",
+    "format:write": "pnpm format --write",
+    "lint": "pnpm exec nx run-many -t lint",
+    "tsc": "pnpm exec nx run-many -t tsc",
+    "validate": "pnpm format:write && pnpm tsc && pnpm lint"
   },
   "keywords": [],
   "author": "",
@@ -11,7 +17,7 @@
   "devDependencies": {
     "@nx/eslint": "19.1.1",
     "eslint": "~8.57.0",
-    "nx": "19.1.1"
-  },
-  "dependencies": {}
+    "nx": "19.1.1",
+    "prettier": "^3.0.0"
+  }
 }

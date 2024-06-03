@@ -17,6 +17,9 @@ importers:
       nx:
         specifier: 19.1.1
         version: 19.1.1
+      prettier:
+        specifier: ^3.0.0
+        version: 3.3.0
 
   apps/api:
     dependencies:
