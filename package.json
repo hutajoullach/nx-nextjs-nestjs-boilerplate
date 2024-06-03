@@ -1,0 +1,17 @@
+{
+  "name": "nx-nextjs-nestjs-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "pnpm exec nx run-many -t build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nx/eslint": "19.1.1",
+    "eslint": "~8.57.0",
+    "nx": "19.1.1"
+  },
+  "dependencies": {}
+}
